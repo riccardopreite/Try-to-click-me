@@ -1,0 +1,32 @@
+<html>
+<head>
+  <script src="./jquery.min.js"></script>
+
+
+  <title>Hide Cursor in JavaScript</title>
+  <style type="text/css">
+    /* body:hover{
+      background-color: red;
+  } */
+  img{
+      position:absolute;
+      top:0px;
+      left:0px;
+    }
+  #hide_id::selection {
+	background-color: #ffffff;
+  opacity: .4;
+}
+  </style>
+</head>
+<body name="stop" id="body"  oncontextmenu="return false;">
+  <img style="display:none;width:50%;height:50%;" src="https://i.ytimg.com/vi/m1B2MRLE6Lc/hqdefault.jpg">
+  <button onclick="timeout = 0">0</button>
+  <button onclick="timeout = 3000">1</button>
+  <button onclick="timeout = 1500">2</button>
+  <button onclick="timeout = 350">3</button>
+  <audio id="miao" src='./miaomiao.mp3' hidden></audio>
+  <button id="hide_id" style="position: fixed; bottom:50%; left:50%;" onclick="start()" draggable='false'>Hi this is the particular area to hide the cursor</button>
+</body>
+<script src="./gioco.js" type="text/javascript"></script>
+</html>
